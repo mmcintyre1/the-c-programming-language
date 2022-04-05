@@ -1,0 +1,16 @@
+# compiled c in projects
+# excludes all files with no extension
+# and needs to come first in gitignore or everything previous to it will be
+# essentially overwritten
+*
+!/**/
+!*.*
+!Makefile
+
+# compiled c
+*.out
+*Zone.Identifier
+*tests-out
+
+# vscode files
+.vscode
