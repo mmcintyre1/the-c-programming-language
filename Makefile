@@ -1,7 +1,9 @@
 CC = clang
 CFLAGS = -Weverything
 
-wcat: wcat.c
+all: hello_world.out
+
+%.out: %.c
 	$(CC) -g -o $@ $< $(CFLAGS)
 
 clean:
